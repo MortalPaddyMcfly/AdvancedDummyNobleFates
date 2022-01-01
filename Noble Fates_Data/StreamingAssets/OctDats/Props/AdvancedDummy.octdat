@@ -1,0 +1,52 @@
+{
+	id Oct.Props.AdvancedDummy
+	type TilePropType
+	inherit Oct.Props.Audio.Metal
+	
+	actorType = TrainingDummyPropActor
+	name = Advanced Dummy
+    pluralName = Advanced Dummies
+    toolName = Avdanced Dummy
+    
+	category = <Oct.Props.Categories.Defense>
+	selectionMode = Tile
+	buildingMode = Props
+	rotation = choose
+    
+    maxHealth = 500
+    progressMultiplier = .35
+    difficulty = .75
+	
+	buildItemFilter = <Oct.Items.Stackable.IronRods>
+	buildItemCount = 5
+	repairItemFilter = <Oct.Items.Stackable.IronRods>
+	
+	buildPos = 
+	[
+		vector(0, 0, .5)
+		vector(0, 0, -.5)
+		vector(.5, 0, 0)
+		vector(-.5, 0, 0)
+	]
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/Props/Iron/AdvancedDummy/AdvancedDummy.fbx
+			name = AdvancedDummy
+            behavior = TrainingDummyPropBehavior
+		}
+	]
+	
+	//colorSlots = 
+	//[
+	//	{
+	//		type PropColorSlot
+	//		name = Post
+	//		palette = <Oct.Props.Palettes.WoodFurniture>
+	//	}		
+	//]
+	
+	researchEntry = <Oct.Research.Building.TrainingDummy>
+}
