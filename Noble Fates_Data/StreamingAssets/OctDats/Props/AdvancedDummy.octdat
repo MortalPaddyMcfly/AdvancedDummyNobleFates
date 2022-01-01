@@ -1,7 +1,7 @@
 {
 	id Oct.Props.AdvancedDummy
 	type TilePropType
-	inherit Oct.Props.Audio.Metal
+	inherit Oct.Props.Audio.Stone
 	
 	actorType = TrainingDummyPropActor
 	name = Advanced Dummy
